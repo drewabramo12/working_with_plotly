@@ -135,18 +135,19 @@ function buildCharts(sample) {
         value: wfreq,
         type: "indicator",
         mode: "guage+number",
-        title: { text: "Washing Frequencey \n Scrubs per Week" },
+        title: { text: "Washing Frequencey Scrubs per Week" },
         mode: "gauge+number",
+        delta: {reference: 380},
         gauge: {
           bar: {color: "black"},
-          axis: { range: [null, 10] },
+          axis: { 
+            range: [null, 10]},
           steps: [
             { range: [0, 2], color: "red" },
             { range: [2, 4], color: "orange" },
             { range: [4, 6], color: "yellow" },
             { range: [6, 8], color: "lightgreen" },
-            { range: [8, 10], color: "green" }
-          ],
+            { range: [8, 10], color: "green" }]
         }
       }
     ];

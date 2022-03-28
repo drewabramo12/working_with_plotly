@@ -5,15 +5,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width">
   <title>Belly Button Biodiversity</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 
-<body>
+<body style="background-color:grey">
 
   <div class="container">
     <div class="row">
-      <div class="col-md-12 jumbotron text-center">
+      <div class="col-md-12 jumbotron text-center" style="background-image: url(static\images\bacteria.jpg);" >
+        <img src="static\images\bacteria.jpg" alt="bacteria">
         <h1>Belly Button Biodiversity Dashboard</h1>
         <p>Use the interactive charts below to explore the dataset</p>
       </div>
@@ -33,14 +35,17 @@
       </div>
       <div class="col-md-5">
         <div id="bar"></div>
+        <div><h3>The graph depicts the top 10 bacterial cultures for each ID. The bacterial cultures are organized into a horizontal bar chart. The graph is organized with the highest producing bacterial culture on the top and the lowest of the top ten on the bottom.</h3></div>
       </div>
-      <div class="col-md-5">
+      <div class="col-md-4">
         <div id="gauge"></div>
+        <div><h3>The graph depicts the wash frequency of each ID. The black band on the gauge represents the amount of times the individual washed their bellybutton. The number in the middle is a digital representation of the number of washes. The gauge coloration also shows a prescibed determination of how many washes is considered healthy.</h3></div>
       </div>
     </div>
     <div class="row">
       <div class="col-md-12">
         <div id="bubble"></div>
+        <div><h3>The graph depicts the bacterial cultures of each ID. It depicts the types of each type of bacteria found and at what consistency when a mouse is hovered over a circle. The color is also determined by the bacterial culture's ID number.</h3></div>
       </div>
     </div>
   </div>
